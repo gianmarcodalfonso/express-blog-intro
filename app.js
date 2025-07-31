@@ -13,11 +13,14 @@ app.get(`/`, (req, res) => {
   res.send(``)
 })
 
+// Inserisco il middleware per i file statici
+app.use(express.static(`public`));
+
 const posts = [
   {
     title: "Uomo sulla Luna",
     content: "Lorem ipsum dolor",
-    img: "./public/imgs/Moon.png",
+    img: "public/imgs/Moon.png",
     tags: ["space","nasa","moon"]
   },
   {
