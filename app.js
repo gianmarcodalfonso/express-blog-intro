@@ -13,6 +13,38 @@ app.get(`/`, (req, res) => {
   res.send(``)
 })
 
+const posts = [
+  {
+    title: "Uomo sulla Luna",
+    content: "Lorem ipsum dolor",
+    img: "./",
+    tags: ["space","nasa","moon"]
+  },
+  {
+    title: "Uomo su Marte",
+    content: "Lorem ipsum dolor",
+    img: "./",
+    tags: ["space","nasa","mars"]
+  },
+  {
+    title: "Uomo su Venere",
+    content: "Lorem ipsum dolor",
+    img: "./",
+    tags: ["space","nasa","Venus"]
+  },
+  {
+    title: "Uomo su mercurio",
+    content: "Lorem ipsum dolor",
+    img: "./",
+    tags: ["space","nasa","mercury"]
+  },
+  {
+    title: "Uomo su Giove",
+    content: "Lorem ipsum dolor",
+    img: "./",
+    tags: ["space","nasa","Jupiter"]
+  },
+]
 
 app.listen(port, () => {
   console.log(`Server del mio blog`)
