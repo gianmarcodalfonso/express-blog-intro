@@ -9,8 +9,7 @@ const port = 3000;
 
 // definiamo la rotta base dell'applicazione
 app.get(`/`, (req, res) => {
-  console.log(`Server del mio blog`)
-  res.send(``)
+  res.send(`Server del mio blog`)
 })
 
 // Inserisco il middleware per i file statici
@@ -22,31 +21,31 @@ app.get(`/bacheca`, (req, res) => {
     {
       title: "Uomo sulla Luna",
       content: "Lorem ipsum dolor",
-      img: "imgs/Moon.jpg",
+      img: "/imgs/Moon.jpg",
       tags: ["space","nasa","moon"]
     },
     {
       title: "Uomo su Marte",
       content: "Lorem ipsum dolor",
-      img: "imgs/Mars.png",
+      img: "/imgs/Mars.png",
       tags: ["space","nasa","mars"]
     },
     {
       title: "Uomo su Venere",
       content: "Lorem ipsum dolor",
-      img: "imgs/Venus.png",
+      img: "/imgs/Venus.png",
       tags: ["space","nasa","Venus"]
     },
     {
       title: "Uomo su mercurio",
       content: "Lorem ipsum dolor",
-      img: "imgs/Mercury.png",
+      img: "/imgs/Mercury.png",
       tags: ["space","nasa","mercury"]
     },
     {
       title: "Uomo su Giove",
       content: "Lorem ipsum dolor",
-      img: "imgs/Jupiter.png",
+      img: "/imgs/Jupiter.png",
       tags: ["space","nasa","Jupiter"]
     },
   ]
@@ -55,5 +54,5 @@ app.get(`/bacheca`, (req, res) => {
 })
 
 app.listen(port, () => {
-  console.log(`Server del mio blog`)
+  console.log(`Server del mio blog in ascolto alla porta ${port}.`)
 })
